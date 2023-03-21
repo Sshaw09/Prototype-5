@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{C667BC21-A1CA-C178-204F-1C5E709A5DF3}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Target.cs" Line="44" Column="77" />
-      <File FileName="Assets/GameManager.cs" Line="7" Column="37" />
+      <File FileName="Assets/Scripts/Target.cs" Line="12" Column="25" />
+      <File FileName="Assets/GameManager.cs" Line="4" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

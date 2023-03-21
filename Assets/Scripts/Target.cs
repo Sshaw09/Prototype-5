@@ -5,14 +5,20 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     private Rigidbody targetRb;
+    private GameManager gameManager;
     float minSpeed = 12;
     float maxSpeed = 16;
     float maxTorque = 10;
     float xRange = 4;
     float ySpawnPos = -2;
+    public ParticleSystem explosionParticle;
+
+    public int pointValue;
     // Start is called before the first frame update
     void Start()
     {
+        //Finds the game manager object then locates the script attached to it
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         //Get the objects Rigidbody component
         targetRb = GetComponent<Rigidbody>();
         //Applies the force using the RandomForce method
@@ -48,9 +54,13 @@ public class Target : MonoBehaviour
     }
 
     //When the mouse is inside a colldier and gets clicked it will destroy the object
+    //Makes the score go up based on the pointValue of the object
+    //Makes a particle spawn when mouse is clicked
     private void OnMouseDown()
     {
         Destroy(gameObject);
+        Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
+        gameManager.UpdateScore(pointValue);
     }
 
     //When it colldies with the sensor (The only object with the trigger on), the object gets destroyed
