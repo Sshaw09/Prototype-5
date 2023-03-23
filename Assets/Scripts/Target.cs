@@ -5,6 +5,7 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     private Rigidbody targetRb;
+    //Reference to the game manager *********
     private GameManager gameManager;
     float minSpeed = 12;
     float maxSpeed = 16;
@@ -27,12 +28,6 @@ public class Target : MonoBehaviour
         targetRb.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
         //Sets the positon of the object
         transform.position = RandomSpawnPos();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     //This makes the object go up between a random strength of 12-16
@@ -64,8 +59,15 @@ public class Target : MonoBehaviour
     }
 
     //When it colldies with the sensor (The only object with the trigger on), the object gets destroyed
+    //Makes the game over UI pop up after target hits sensor but doesn't active when the bad object is hits it 
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
+
+        if(!gameObject.CompareTag("Bad"))
+        {
+            gameManager.GameOver();
+        }
+        
     }
 }
