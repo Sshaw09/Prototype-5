@@ -1,17 +1,25 @@
 ﻿<Properties StartupConfiguration="{C667BC21-A1CA-C178-204F-1C5E709A5DF3}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DifficultyButton.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Challenge 5/Scripts/GameManagerX.cs">
     <Files>
       <File FileName="Assets/Scripts/Target.cs" Line="58" Column="24" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="33" Column="16" />
-      <File FileName="Assets/Scripts/DifficultyButton.cs" Line="4" Column="21" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="46" Column="44" />
+      <File FileName="Assets/Scripts/DifficultyButton.cs" Line="29" Column="41" />
+      <File FileName="Assets/Challenge 5/Scripts/TargetX.cs" Line="30" Column="31" />
+      <File FileName="Assets/Challenge 5/Scripts/GameManagerX.cs" Line="80" Column="50" />
+      <File FileName="Assets/Challenge 5/Scripts/DifficultyButtonX.cs" Line="26" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Prototype-5" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Target.cs" selected="True" />
+              <Node name="Challenge 5" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="GameManagerX.cs" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Clicky Crates" expanded="True">
+                <Node name="Scripts" expanded="True" />
               </Node>
             </Node>
           </Node>
